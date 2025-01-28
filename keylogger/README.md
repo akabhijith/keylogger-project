@@ -7,7 +7,7 @@ Install
 -------
 
 ```
-npm install node-keylogger
+npm install keylogger
 ```
 
 
