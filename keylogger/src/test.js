@@ -1,6 +1,6 @@
-const Keyboard = require('./index'); // Import the keylogger module
+const Keyboard = require('./index'); 
 
-const k = new Keyboard('event0'); // Replace 'event3' with your correct event file
+const k = new Keyboard('event0'); // Replace 'event0' with your correct event file
 
 k.on('keyup', console.log);
 k.on('keydown', console.log);
