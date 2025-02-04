@@ -20,8 +20,9 @@ Keyboard.prototype = Object.create(EventEmitter.prototype, {
 
 Keyboard.prototype.onRead = function onRead() {
   const self = this;
-
+  console.log(`Listening on /dev/input/${this.dev}...`);
   this.data.on('data', data => {
+    console.log("Raw Data Received:", data);
     this.buffer = data.slice(24);
     let event = parse(this, this.buffer);
     if (event) {
